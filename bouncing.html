@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .cointainer{
+            width:300px;
+            height: 600px;
+            border: 2px solid black;
+            background-color: antiquewhite;
+            display: flex;
+            justify-content: center;
+            
+        }
+        .box{
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: red;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+             animation-name: bouncing-ball;
+             animation-duration: 3s;
+             animation-iteration-count: 10;
+             animation-direction: alternate;
+
+        }
+        @keyframes bouncing-ball{
+            0%{
+                transform: translateY(0px) rotate(0);
+            }
+            50%{
+                background-color: blue;
+            }
+            100%{
+                transform: translateY(500px) rotate(1turn);
+            }
+        }
+        </style>
+</head>
+<body>
+    <div class="cointainer">
+        <div class="box">ball</div>
+        </div>
+</body>
+</html>
